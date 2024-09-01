@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Site Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        .carousel-item img {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Templo de yoga</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav  class="collapse navbar-collapse navbar-nav justify-content-end" id="menu">
+                    <ul  class="nav nav-pills navbar-nav ">
+                        <li  class="nav-item">
+                            <a class="nav-link " href="#inicio">O Inicio</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#primeiro-passo">Primeiro passo</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>            
+        </div>
+    </header>
+    <!-- ==========inicio - Carousel========== -->
+    <section>
+        <div class="container ">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide "  data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="1000" class="carousel-item active">
+                        <img class="d-block w-100  " src="https://media.istockphoto.com/id/1495573971/pt/foto/bamboo-forest-in-kyoto-japan.jpg?s=612x612&w=0&k=20&c=x1rdIafzzvHg3RZnA2g1Q-jsTpsf_Wu3J6_eKq-OC_g=" >
+                        <div class="carousel-caption">
+                            <h2>Foto 1</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="1000" class="carousel-item">
+                        <img class="d-block w-100  " src="https://media.istockphoto.com/id/588263450/pt/foto/japanese-shoji-washi-paper-door-at-chionji-temple-kyoto-japan.jpg?s=612x612&w=0&k=20&c=CCFaIzpL0oZJLhPoOTGMCIzDhrUrxA3aK8HGKYrt8PM=">
+                        <div class="carousel-caption">
+                            <h2>Foto 2</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="1000" class="carousel-item">
+                        <img class="d-block w-100  " src="https://media.istockphoto.com/id/812022802/pt/foto/buddhist-temple-garden-view.jpg?s=612x612&w=0&k=20&c=Yu72-i4eKWh1-scZ5gnKEaRBDKwAxVkLvKP1rFplcMU=">
+                        <div class="carousel-caption">
+                            <h2>Foto 3</h2>
+                        </div>
+                    </div>
+                <div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon" ></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon" ></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================   fim - Carousel   =========================== -->
+<br><hr>
+    <section>
+        <div class="container">   
+            <div class="row">
+                <div class="accordion" id="inicio">
+                    <div class="accordion-item">
+                        <div class="accordion-header" >
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion1">
+                                <h1 class="h1 display-2">fundametos da meditação</h1>
+                            </button>
+                        </div>
+                        <div id="accordion1" class="accordion-collapse collapse show ">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Asanas I (A postura é o caminho)
+                                            </heade>
+                                            <img src="https://media.istockphoto.com/id/1483989816/pt/foto/adult-arab-male-with-a-ponytail-meditating-in-a-yoga-class.jpg?s=612x612&w=is&k=20&c=uu26bF8pg1B4ZDyFt3egpaPuuZQF_A2YmwlSkxvw42E=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body">Asanas I</h4>
+                                                <h5 class="card-subtitle">A postura</h5>
+                                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi vel rem id tempora hic obcaecati, mollitia harum porro ipsum perspiciatis nam illum aspernatur officiis ea consectetur vero iusto sunt odio?</p>
+                                                <a href="" class="btn btn-primary">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Respiração I  ( Percorrer o caminho)                                            </heade>
+                                            <img src="https://media.istockphoto.com/id/1483989816/pt/foto/adult-arab-male-with-a-ponytail-meditating-in-a-yoga-class.jpg?s=612x612&w=is&k=20&c=uu26bF8pg1B4ZDyFt3egpaPuuZQF_A2YmwlSkxvw42E=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body">Respiração</h4>
+                                                <h5 class="card-subtitle">O caminhar</h5>
+                                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, qui harum non commodi, modi praesentium nobis delectus repellendus suscipit ipsam tempore a rem sit laboriosam neque sed porro exercitationem iure? </p>
+                                                <a href="" class="btn btn-primary">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Atenção plena I (Sinta o caminho)
+                                            </heade>
+                                            <img src="https://media.istockphoto.com/id/1483989816/pt/foto/adult-arab-male-with-a-ponytail-meditating-in-a-yoga-class.jpg?s=612x612&w=is&k=20&c=uu26bF8pg1B4ZDyFt3egpaPuuZQF_A2YmwlSkxvw42E=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body"> Atenção plena</h4>
+                                                <h5 class="card-subtitle"> Atenção plena</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non delectus vero unde dolorem eveniet fugit minima rem illo inventore nemo animi in eligendi, atque, debitis odit asperiores placeat cumque. </p>
+                                                <a href="" class="btn ntn-primary">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==========fim accordion==================== -->
+                <!-- ==========INICIO - ACCORDION 2============== -->
+                <div class="accordion " id="primeiro-passo">
+                    <div class="accordion-item">
+                        <div class="accordion-header" >
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion2">
+                                <h1 class="h1 display-2">Como meditar passo a passo</h1>
+                            </button>
+                        </div> 
+                        <div id="accordion2" class="accordion-collapse collapse  ">
+                            <div class="accordion-body">                               
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Asanas II (A postura é o caminho)
+                                            </heade>
+                                            <img src="https://media.istockphoto.com/id/927813716/pt/foto/woman-doing-yoga-near-ulun-danu-temple-in-bali-at-sunrise.jpg?s=612x612&w=0&k=20&c=x-rs1Wm_Zvb6toFXbWMRtVy1FvP7XVteRHm1Qq-uMao=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body">Asanas II</h4>
+                                                <h5 class="card-subtitle">Asanas II</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat architecto quasi ipsa consequatur qui sed maiores quos blanditiis quae laboriosam neque illum temporibus nesciunt itaque non, eaque placeat inventore beatae!</p>
+                                                <a href="" class="btn btn-info">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Respiração II  ( Percorrer o caminho)                                               </heade>
+                                            <img src="https://media.istockphoto.com/id/927813716/pt/foto/woman-doing-yoga-near-ulun-danu-temple-in-bali-at-sunrise.jpg?s=612x612&w=0&k=20&c=x-rs1Wm_Zvb6toFXbWMRtVy1FvP7XVteRHm1Qq-uMao=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body">Respiração II 
+                                                <h5 class="card-subtitle">Respiração II </h5>
+                                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut tempore voluptatibus reprehenderit. Rerum tenetur consequatur veritatis ratione, odit, vitae error, pariatur minima enim aliquam non esse culpa animi? Rem, voluptatum. </p>
+                                                <a href="" class="btn btn-info">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <Article class="card">
+                                            <heade class="card-header">
+                                                Atenção plena II (Sinta o caminho)                                            </heade>
+                                            <img src="https://media.istockphoto.com/id/927813716/pt/foto/woman-doing-yoga-near-ulun-danu-temple-in-bali-at-sunrise.jpg?s=612x612&w=0&k=20&c=x-rs1Wm_Zvb6toFXbWMRtVy1FvP7XVteRHm1Qq-uMao=" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-body"> Atenção plena II</h4>
+                                                <h5 class="card-subtitle"> Atenção plena II</h5>
+                                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, nihil excepturi? Inventore debitis ad hic expedita, alias accusantium ex fugit? Fugiat omnis eligendi tenetur consequuntur perferendis officia cupiditate. Consequatur, eos? </p>
+                                                <a href="" class="btn btn-info">Leia mais</a>
+                                            </div>
+                                            <footer class="card-footer">
+                                                postado em <time>29/08/2024</time>
+                                            </footer>
+                                        </Article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =========FIM ACCORDION 2 ==================== -->
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="alert alert-warning">
+                            <span class="display-1" > Outros caminhos para se encontrar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <Article class="card">
+                        <heade class="card-header">
+                            Caminho I
+                        </heade>
+                        <img src="https://media.istockphoto.com/id/1221839121/pt/foto/buddhist-monks-performing-zen-at-autumn-temple.jpg?s=612x612&w=0&k=20&c=zSnnkoIY7cZ2aM6HL8aDoT5dOXmpErp2A4lU4nq5MHA=" alt="">
+                        <div class="card-body">
+                            <h4 class="card-body">Caminho I</h4>
+                            <h5 class="card-subtitle">Caminho I</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum ad, dignissimos quia doloribus omnis ipsum amet explicabo saepe sit, ex eum quisquam odio iste ipsam id expedita officia suscipit! </p>
+                            <a href="" class="btn btn-info">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            postado em <time>29/08/2024</time>
+                        </footer>
+                    </Article>
+                </div>
+
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <Article class="card">
+                        <heade class="card-header">
+                            Caminho II
+                        </heade>
+                        <img src="https://media.istockphoto.com/id/1221839121/pt/foto/buddhist-monks-performing-zen-at-autumn-temple.jpg?s=612x612&w=0&k=20&c=zSnnkoIY7cZ2aM6HL8aDoT5dOXmpErp2A4lU4nq5MHA=" alt="">
+                        <div class="card-body">
+                            <h4 class="card-body">Caminho II</h4>
+                            <h5 class="card-subtitle">Caminho II</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum ad, dignissimos quia doloribus omnis ipsum amet explicabo saepe sit, ex eum quisquam odio iste ipsam id expedita officia suscipit! </p>
+                            <a href="" class="btn btn-info">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            postado em <time>29/08/2024</time>
+                        </footer>
+                    </Article>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <Article class="card">
+                        <heade class="card-header">
+                            Caminho III
+                        </heade>
+                        <img src="https://media.istockphoto.com/id/1221839121/pt/foto/buddhist-monks-performing-zen-at-autumn-temple.jpg?s=612x612&w=0&k=20&c=zSnnkoIY7cZ2aM6HL8aDoT5dOXmpErp2A4lU4nq5MHA=" alt="">
+                        <div class="card-body">
+                            <h4 class="card-body">Caminho III</h4>
+                            <h5 class="card-subtitle">Caminho III</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum ad, dignissimos quia doloribus omnis ipsum amet explicabo saepe sit, ex eum quisquam odio iste ipsam id expedita officia suscipit! </p>
+                            <a href="" class="btn btn-info">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            postado em <time>29/08/2024</time>
+                        </footer>
+                    </Article>
+                </div>
+            </div>
+    </section>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

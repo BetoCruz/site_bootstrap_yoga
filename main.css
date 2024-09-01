@@ -1,0 +1,19 @@
+body {
+    background-color: #d2d6d0;
+}
+.accordion {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+header{
+    background-color: #c4e477;
+    border-bottom: 5px solid  #76993d;
+}
+header li:hover {
+    background-color:#81c35e ;
+    border-radius: 10px;
+}
+article{
+    margin-bottom: 50px;
+}
